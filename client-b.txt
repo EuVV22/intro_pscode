@@ -2,3 +2,40 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+# Considering no moving pieces on the map
+# Considering locations and map define
+
+Define vertical and horizontal 'Subject' position save in Object
+Define vertical and horizontal 'Objective' position save in Object
+
+Initialize a data structure that can grow and reduce every time it takes a direction
+Initialize a 4-space array that store which direction is block 
+
+Define a function that checks for a block path for each direction \ Update the path block array
+Define a function that recalculates 'Subject' position
+Define a function that picks the prefer move by
+    calculate difference between 'Subject' vertical and 'Objective' vertical
+        if positive wants to move North
+        if negative wants to move South
+    calculate difference between 'Subject' horizontal and 'Objective' horizontal
+        if positive wants to move East
+        if negative want to move West
+Define a function that compares prefer move to blockers
+    if prefer vertical move if possible, move 
+    else if prefer horizontal move possible move 
+    else if second possible vertical move possible move 
+    else if second possible horizontal move possible move
+    else throw error "Path impossible to find"
+Define function that prevents the robot from repeating itself when the path is close (set the path as block if already was explore)
+    reduce the steps on block paths from data structure
+
+
+Loop if 'Subject' position != 'Objective' position
+    Check for blocked paths
+    Check prefer moves
+    Prevent path repetition / update blocked paths
+    Choose move
+    execute move
+    Update move Data Structure
+Loop
+Display Data Structure of move to achieve the 'Objective'.

@@ -2,3 +2,18 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+Greet the player 
+Explain the rules to the player
+Generate random number between 1 and 10 and save it in a variable
+Initiate a counter of guesses = 0
+
+Loop
+    Ask the user to guess the number
+        if user guess the number 
+            Congratulate user
+            end
+        if user miss the number 
+            add 1 to the counter of guesses
+Loop only if counter of guesses < 3
+
+Tell the user to try again 

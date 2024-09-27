@@ -2,3 +2,14 @@
 # Add your pseudocode to this file below this line: #
 # ------------------------------------------------- #
 
+Start package reader
+Initiate package counter variable = 0 
+
+Initiate a package detection Loop
+    if package is detected 
+        if counter == 50
+            Request to be put in a new box
+            set counter = 0
+        add 2 to counter
+        display counter value
+loop
